@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- <link rel="stylesheet" href="/Template/assets/css/style.css"> -->
+    <title>Go Calculator</title>
+</head>
+<body>
+    <div id="all">
+        <div id="container">
+            <form action="/" method="post">
+                <div id="caculator">
+                    <div id="innerCalculator">
+                        <div id="view">
+                            <input type="text" id="result" name="value" placeholder="數字" value={{.Ans}} />
+                        </div>
+                        <div id="row1" class="row">
+                            <button class="btn" type="button" id="clear">AC</button>
+                            <button class="btn" type="submit" name="submit" value="^">^</button>
+                            <button class="btn" type="submit" name="submit" value="%">%</button>
+                            <button class="btn" type="submit" name="submit" value="/">/</button>
+                        </div>
+                        <div id="row2" class="row">
+                            <button class="btn numberBtn" type="button" id="number_7">7</button>
+                            <button class="btn numberBtn" type="button" id="number_8">8</button>
+                            <button class="btn numberBtn" type="button" id="number_9">9</button>
+                            <button class="btn" type="submit" name="submit" value="*">*</button>
+                        </div>
+                        <div id="row3" class="row">
+                            <button class="btn numberBtn" type="button" id="number_4">4</button>
+                            <button class="btn numberBtn" type="button" id="number_5">5</button>
+                            <button class="btn numberBtn" type="button" id="number_6">6</button>
+                            <button class="btn" type="submit" name="submit" value="-">-</button>
+                        </div>
+                        <div id="row4" class="row">
+                            <button class="btn numberBtn" type="button" id="number_1">1</button>
+                            <button class="btn numberBtn" type="button" id="number_2">2</button>
+                            <button class="btn numberBtn" type="button" id="number_3">3</button>
+                            <button class="btn" type="submit" name="submit" value="+">+</button>
+                        </div>
+                        <div id="row5" class="row">
+                            <button class="big_btn numberBtn" type="button" id="number_0">0</button>
+                            <button class="btn" type="button" id="point">.</button>
+                            <button class="btn" type="submit" name="submit" value="=">=</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<!-- <script src="/Template/assets/js/script.js"></script> -->
+<script src="/assets/js/script.js"></script>
+</html>
